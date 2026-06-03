@@ -303,6 +303,36 @@
       color: #202033;
     }
 
+    .usage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.usage-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 14px 34px rgba(60, 60, 100, 0.1);
+}
+
+.usage-icon {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.usage-card h3 {
+  font-size: 18px;
+  color: #202033;
+  margin-bottom: 10px;
+}
+
+.usage-card p {
+  color: #5c5c70;
+  line-height: 1.6;
+  font-size: 15px;
+}
     .steps {
       max-width: 760px;
       margin: 0 auto;
@@ -374,7 +404,8 @@
       }
 
       .reasons,
-.commitments {
+.commitments,
+.usage-grid {
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -394,7 +425,8 @@
       }
 
       .reasons,
-.commitments {
+.commitments,
+.usage-grid {
   grid-template-columns: 1fr;
 }
 
@@ -419,10 +451,11 @@
     <nav class="nav">
       <div class="brand">AnimeX</div>
       <div class="nav-links">
-        <a href="#san-pham">Sản phẩm</a>
-        <a href="#huong-dan">Hướng dẫn</a>
-        <a href="#lien-he">Liên hệ</a>
-      </div>
+  <a href="#san-pham">Sản phẩm</a>
+  <a href="#cach-su-dung">Cách dán</a>
+  <a href="#huong-dan">Đặt hàng</a>
+  <a href="#lien-he">Liên hệ</a>
+</div>
     </nav>
 
     <main class="hero">
@@ -570,6 +603,37 @@
       </div>
     </section>
 
+    <section id="cach-su-dung">
+  <h2 class="section-title">Cách sử dụng sản phẩm</h2>
+  <p class="section-subtitle">Dán đẹp hơn khi bề mặt sạch, phẳng và khô ráo</p>
+
+  <div class="usage-grid">
+    <div class="usage-card">
+      <div class="usage-icon">🧼</div>
+      <h3>1. Lau sạch bề mặt</h3>
+      <p>Lau bụi trên tường, vở, tủ, bàn hoặc bề mặt cần dán. Nên chọn nơi phẳng, sạch và khô ráo.</p>
+    </div>
+
+    <div class="usage-card">
+      <div class="usage-icon">📐</div>
+      <h3>2. Căn vị trí trước</h3>
+      <p>Đặt thử sản phẩm lên vị trí muốn dán để canh bố cục. Khi thấy vừa mắt rồi mới bắt đầu bóc keo.</p>
+    </div>
+
+    <div class="usage-card">
+      <div class="usage-icon">🧷</div>
+      <h3>3. Bóc lớp keo mặt sau</h3>
+      <p>Bóc nhẹ lớp giấy phía sau, dán từ từ từ một cạnh sang cạnh còn lại để hạn chế nhăn hoặc lệch.</p>
+    </div>
+
+    <div class="usage-card">
+      <div class="usage-icon">✨</div>
+      <h3>4. Miết nhẹ cho phẳng</h3>
+      <p>Sau khi dán, dùng tay miết nhẹ từ giữa ra ngoài để sản phẩm bám đều và nhìn gọn gàng hơn.</p>
+    </div>
+  </div>
+</section>
+    
     <section id="huong-dan">
       <h2 class="section-title">Hướng dẫn đặt hàng</h2>
       <p class="section-subtitle">Đặt hàng nhanh qua Zalo, TikTok Shop hoặc Shopee</p>
