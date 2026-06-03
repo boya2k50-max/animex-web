@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -5,28 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>AnimeX - Decor Anime, Tranh Dán & Sticker Manga</title>
-  <meta name="description" content="AnimeX chuyên tranh dán anime, sticker manga A6, set truy nã One Piece 10 tờ A4/A5 và decal decor dành cho fan anime/manga." />
+  <meta name="description" content="AnimeX chuyên tranh dán anime A4/A5, sticker manga A6 150 tờ, set truy nã One Piece 10 tờ A4/A5 và decal decor dành cho fan anime/manga." />
   <meta name="keywords" content="AnimeX, tranh dán anime, sticker manga, decal anime, tranh dán One Piece, sticker A6, decor anime, set truy nã One Piece, poster truy nã A4, poster truy nã A5" />
   <meta name="author" content="AnimeX" />
 
   <meta property="og:title" content="AnimeX - Decor Anime Cho Góc Phòng Của Bạn" />
-  <meta property="og:description" content="Tranh dán anime, sticker manga, set truy nã One Piece 10 tờ A4/A5 và decal decor dành cho fan anime/manga." />
+  <meta property="og:description" content="Tranh dán anime A4/A5, sticker manga A6 150 tờ, set truy nã One Piece 10 tờ A4/A5 và decal decor dành cho fan anime/manga." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://animex.fun" />
   <meta property="og:site_name" content="AnimeX" />
-<meta property="og:image" content="https://animex.fun/preview.png" />
-<meta property="og:image:width" content="1536" />
-<meta property="og:image:height" content="1024" />
+  <meta property="og:image" content="https://animex.fun/preview.png" />
+
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AnimeX - Decor Anime Cho Góc Phòng Của Bạn" />
-  <meta name="twitter:description" content="Tranh dán anime, sticker manga, set truy nã One Piece 10 tờ A4/A5 và decal decor dành cho fan anime/manga." />
-<meta name="twitter:image" content="https://animex.fun/preview.png" />
+  <meta name="twitter:description" content="Tranh dán anime A4/A5, sticker manga A6 150 tờ, set truy nã One Piece 10 tờ A4/A5 và decal decor dành cho fan anime/manga." />
+  <meta name="twitter:image" content="https://animex.fun/preview.png" />
+
   <link rel="canonical" href="https://animex.fun" />
-  <link rel="icon" href="data:image/svg+xml,
-  %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
-  %3Crect width='100' height='100' rx='24' fill='%23ff4fa3'/%3E
-  %3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-family='Arial' font-weight='700' fill='white'%3EX%3C/text%3E
-  %3C/svg%3E">
+  <link rel="icon" href="logo.png" />
+
   <style>
     * {
       box-sizing: border-box;
@@ -34,189 +32,200 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(circle at top left, #ffb3ec 0, transparent 30%),
-        radial-gradient(circle at top right, #8de7ff 0, transparent 28%),
-        linear-gradient(135deg, #fff7fc 0%, #f7fbff 45%, #fff8e8 100%);
-      color: #1f1f2e;
+        radial-gradient(circle at top left, rgba(255, 79, 163, 0.28) 0, transparent 32%),
+        radial-gradient(circle at top right, rgba(255, 207, 74, 0.32) 0, transparent 30%),
+        linear-gradient(135deg, #fff7fb 0%, #fffdf4 45%, #f7fbff 100%);
+      color: #202033;
       min-height: 100vh;
     }
 
     a {
       text-decoration: none;
     }
-.brand-logo img {
-  height: 64px;
-  width: auto;
-  display: block;
-}
+
+    img {
+      max-width: 100%;
+    }
+
+    section {
+      margin-top: 78px;
+      scroll-margin-top: 110px;
+    }
+
     .container {
       width: 100%;
-      max-width: 1120px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 24px 18px;
+      padding: 20px 18px;
     }
 
     .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 14px 0;
+      gap: 18px;
+      padding: 10px 18px;
+      margin: 0 -18px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 79, 163, 0.14);
     }
 
-    .brand {
-      font-size: 28px;
-      font-weight: 900;
-      color: #ff4fa3;
-      letter-spacing: 1px;
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .brand-logo img {
+      height: 56px;
+      width: auto;
+      display: block;
     }
 
     .nav-links {
       display: flex;
-      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 900;
     }
 
     .nav-links a {
-      color: #333;
+      color: #202033;
+      padding: 8px 10px;
+      border-radius: 999px;
+      transition: 0.2s ease;
     }
 
-   .hero {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 36px;
-  align-items: center;
-}
+    .nav-links a:hover {
+      background: #ff4fa3;
+      color: #fff;
+    }
+
+    .hero {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: 34px;
+      align-items: center;
+    }
 
     .badge {
       display: inline-block;
       background: #fff;
-      color: #ff4fa3;
-      padding: 8px 14px;
+      color: #ff2f83;
+      padding: 9px 15px;
       border-radius: 999px;
       font-size: 14px;
-      font-weight: 800;
+      font-weight: 900;
       box-shadow: 0 8px 24px rgba(255, 79, 163, 0.18);
       margin-bottom: 18px;
     }
 
     h1 {
-      font-size: 56px;
+      font-size: 52px;
       line-height: 1.06;
       color: #202033;
       margin-bottom: 18px;
+      letter-spacing: -1px;
     }
 
     .highlight {
-      color: #ff4fa3;
+      color: #ff2f83;
     }
 
     .hero-text {
-      font-size: 19px;
+      font-size: 18px;
       line-height: 1.7;
       color: #4b4b5e;
-      margin-bottom: 26px;
+      margin-bottom: 22px;
     }
 
     .buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 24px;
+      margin-top: 20px;
+    }
+
+    .button-primary,
+    .button-secondary,
+    .product-button,
+    .table-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 999px;
+      font-weight: 900;
+      transition: 0.2s ease;
     }
 
     .button-primary {
       background: linear-gradient(135deg, #ff4fa3, #ffcf4a);
       color: #111;
       padding: 15px 22px;
-      border-radius: 999px;
-      font-weight: 900;
-      box-shadow: 0 10px 28px rgba(255, 79, 163, 0.25);
+      box-shadow: 0 10px 28px rgba(255, 79, 163, 0.26);
     }
 
     .button-secondary {
       background: #fff;
       color: #202033;
       padding: 15px 22px;
-      border-radius: 999px;
-      font-weight: 900;
       border: 2px solid #fff;
       box-shadow: 0 10px 28px rgba(30, 30, 60, 0.08);
     }
-.hero-banner {
-  background: rgba(255, 255, 255, 0.78);
-  border: 2px solid #ffffff;
-  border-radius: 32px;
-  padding: 10px;
-  box-shadow: 0 20px 60px rgba(80, 80, 140, 0.15);
-  overflow: hidden;
-}
 
-.hero-banner img {
-  width: 100%;
-  display: block;
-  border-radius: 24px;
-}
-    .hero-card {
-      background: rgba(255, 255, 255, 0.78);
+    .button-primary:hover,
+    .button-secondary:hover,
+    .product-button:hover,
+    .table-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-banner {
+      background: rgba(255, 255, 255, 0.82);
       border: 2px solid #ffffff;
       border-radius: 32px;
-      padding: 28px;
-      box-shadow: 0 20px 60px rgba(80, 80, 140, 0.15);
-      position: relative;
+      padding: 10px;
+      box-shadow: 0 20px 60px rgba(80, 80, 140, 0.16);
       overflow: hidden;
     }
 
-    .hero-card::before {
-      content: "★";
-      position: absolute;
-      top: 18px;
-      right: 24px;
-      font-size: 52px;
-      color: #ffcf4a;
-      opacity: 0.8;
+    .hero-banner img {
+      width: 100%;
+      display: block;
+      border-radius: 24px;
     }
 
-    .mockup-title {
-      font-size: 22px;
+    .quick-points {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .quick-point {
+      background: rgba(255, 255, 255, 0.86);
+      border: 2px solid #fff;
+      border-radius: 20px;
+      padding: 14px;
+      font-size: 14px;
       font-weight: 900;
       color: #202033;
-      margin-bottom: 14px;
-    }
-
-    .mockup-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-      margin-top: 18px;
-    }
-
-    .mockup-item {
-      background: linear-gradient(135deg, #fff, #ffeaf7);
-      border-radius: 20px;
-      min-height: 120px;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border: 2px dashed rgba(255, 79, 163, 0.35);
-    }
-
-    .mockup-item span {
-      font-size: 32px;
-    }
-
-    .mockup-item strong {
-      font-size: 15px;
-      color: #333;
-    }
-
-    section {
-      margin-top: 74px;
+      box-shadow: 0 10px 28px rgba(60, 60, 100, 0.08);
     }
 
     .section-title {
@@ -224,13 +233,16 @@
       text-align: center;
       color: #202033;
       margin-bottom: 12px;
+      letter-spacing: -0.5px;
     }
 
     .section-subtitle {
       text-align: center;
       color: #66667a;
       font-size: 17px;
-      margin-bottom: 32px;
+      line-height: 1.6;
+      margin: 0 auto 32px;
+      max-width: 760px;
     }
 
     .products {
@@ -240,174 +252,157 @@
     }
 
     .product-card {
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 28px;
       padding: 22px;
       box-shadow: 0 14px 34px rgba(60, 60, 100, 0.1);
       border: 2px solid #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
     }
 
     .product-icon {
-      font-size: 38px;
-      margin-bottom: 14px;
+      font-size: 40px;
+      margin-bottom: 12px;
     }
 
     .product-card h3 {
       font-size: 21px;
       color: #202033;
       margin-bottom: 10px;
+      line-height: 1.3;
     }
 
     .product-card p {
       color: #5c5c70;
-      line-height: 1.6;
-      margin-bottom: 14px;
+      line-height: 1.62;
+      margin-bottom: 12px;
+      font-size: 15px;
     }
-.price-table {
-  background: rgba(255, 255, 255, 0.9);
-  border: 2px solid #fff;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 0 18px 44px rgba(60, 60, 100, 0.1);
-}
 
-.price-row {
-  display: grid;
-  grid-template-columns: 1.2fr 1.4fr 1fr 0.8fr;
-  gap: 14px;
-  align-items: center;
-  padding: 18px 20px;
-  border-bottom: 1px solid rgba(255, 79, 163, 0.12);
-  color: #4b4b5e;
-}
-
-.price-row:last-child {
-  border-bottom: none;
-}
-
-.price-head {
-  background: linear-gradient(135deg, #ff4fa3, #ffcf4a);
-  color: #111;
-  font-weight: 900;
-}
-
-.price-row a {
-  display: inline-block;
-  background: #202033;
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 999px;
-  font-weight: 900;
-  text-align: center;
-}
     .price {
       display: inline-block;
+      width: fit-content;
       background: #fff1a8;
       color: #202033;
       padding: 8px 12px;
       border-radius: 999px;
       font-weight: 900;
+      margin-top: auto;
     }
-.product-button {
-  display: inline-block;
-  margin-top: 14px;
-  background: linear-gradient(135deg, #ff4fa3, #ffcf4a);
-  color: #111;
-  padding: 12px 16px;
-  border-radius: 999px;
-  font-weight: 900;
-  box-shadow: 0 8px 22px rgba(255, 79, 163, 0.18);
-}
-    .commitments {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
 
-.commit-card {
-  background: rgba(255, 255, 255, 0.9);
-  border: 2px solid #fff;
-  border-radius: 24px;
-  padding: 20px;
-  box-shadow: 0 14px 34px rgba(60, 60, 100, 0.1);
-}
+    .product-button {
+      margin-top: 14px;
+      background: linear-gradient(135deg, #ff4fa3, #ffcf4a);
+      color: #111;
+      padding: 12px 16px;
+      box-shadow: 0 8px 22px rgba(255, 79, 163, 0.18);
+    }
 
-.commit-icon {
-  font-size: 34px;
-  margin-bottom: 10px;
-}
+    .price-table {
+      background: rgba(255, 255, 255, 0.94);
+      border: 2px solid #fff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 18px 44px rgba(60, 60, 100, 0.1);
+    }
 
-.commit-card h3 {
-  font-size: 18px;
-  color: #202033;
-  margin-bottom: 10px;
-}
+    .price-row {
+      display: grid;
+      grid-template-columns: 1.15fr 1.45fr 1fr 0.75fr;
+      gap: 14px;
+      align-items: center;
+      padding: 18px 20px;
+      border-bottom: 1px solid rgba(255, 79, 163, 0.12);
+      color: #4b4b5e;
+      line-height: 1.5;
+    }
 
-.commit-card p {
-  color: #5c5c70;
-  line-height: 1.6;
-  font-size: 15px;
-}
+    .price-row:last-child {
+      border-bottom: none;
+    }
 
-.commit-card.warning {
-  background: #fff8e8;
-  border-color: #ffcf4a;
-}
-    .reasons {
+    .price-head {
+      background: linear-gradient(135deg, #ff4fa3, #ffcf4a);
+      color: #111;
+      font-weight: 900;
+    }
+
+    .table-button {
+      background: #202033;
+      color: #fff;
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+
+    .note-box {
+      margin-top: 18px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 2px dashed rgba(255, 79, 163, 0.28);
+      border-radius: 22px;
+      padding: 16px 18px;
+      color: #5c5c70;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .commitments,
+    .reasons,
+    .usage-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+      gap: 16px;
+    }
+
+    .commit-card,
+    .reason,
+    .usage-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid #fff;
+      border-radius: 24px;
+      padding: 20px;
+      box-shadow: 0 14px 34px rgba(60, 60, 100, 0.1);
     }
 
     .reason {
-      background: #fff;
-      border-radius: 22px;
-      padding: 18px;
       text-align: center;
-      box-shadow: 0 10px 28px rgba(60, 60, 100, 0.08);
     }
 
+    .commit-icon,
+    .usage-icon,
     .reason div {
-      font-size: 30px;
-      margin-bottom: 8px;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .commit-card h3,
+    .usage-card h3 {
+      font-size: 18px;
+      color: #202033;
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+
+    .commit-card p,
+    .usage-card p {
+      color: #5c5c70;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .commit-card.warning {
+      background: #fff8e8;
+      border-color: #ffcf4a;
     }
 
     .reason strong {
       color: #202033;
+      line-height: 1.35;
     }
 
-    .usage-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.usage-card {
-  background: rgba(255, 255, 255, 0.9);
-  border: 2px solid #fff;
-  border-radius: 24px;
-  padding: 20px;
-  box-shadow: 0 14px 34px rgba(60, 60, 100, 0.1);
-}
-
-.usage-icon {
-  font-size: 34px;
-  margin-bottom: 10px;
-}
-
-.usage-card h3 {
-  font-size: 18px;
-  color: #202033;
-  margin-bottom: 10px;
-}
-
-.usage-card p {
-  color: #5c5c70;
-  line-height: 1.6;
-  font-size: 15px;
-}
     .steps {
-      max-width: 760px;
+      max-width: 820px;
       margin: 0 auto;
       display: grid;
       gap: 14px;
@@ -419,8 +414,10 @@
       padding: 18px 20px;
       display: flex;
       gap: 14px;
-      align-items: center;
+      align-items: flex-start;
       box-shadow: 0 10px 28px rgba(60, 60, 100, 0.08);
+      color: #4b4b5e;
+      line-height: 1.6;
     }
 
     .step-number {
@@ -440,7 +437,7 @@
       background: linear-gradient(135deg, #ff4fa3, #8de7ff);
       color: #fff;
       border-radius: 32px;
-      padding: 34px 22px;
+      padding: 38px 24px;
       text-align: center;
       box-shadow: 0 18px 44px rgba(255, 79, 163, 0.22);
     }
@@ -452,7 +449,8 @@
 
     .contact-box p {
       font-size: 17px;
-      margin-bottom: 22px;
+      line-height: 1.6;
+      margin-bottom: 4px;
     }
 
     footer {
@@ -461,53 +459,89 @@
       text-align: center;
       color: #66667a;
       font-size: 14px;
+      line-height: 1.8;
     }
 
-    @media (max-width: 820px) {
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      color: #ff2f83;
+      font-weight: 900;
+    }
+
+    @media (max-width: 920px) {
+      section {
+        scroll-margin-top: 140px;
+      }
+
       .hero {
         grid-template-columns: 1fr;
       }
 
       h1 {
-        font-size: 40px;
+        font-size: 42px;
       }
-.price-row {
-  grid-template-columns: 1fr;
-  gap: 8px;
-}
+
       .products {
         grid-template-columns: 1fr;
       }
 
+      .commitments,
       .reasons,
-.commitments,
-.usage-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
+      .usage-grid,
+      .quick-points {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
-      .nav {
-        flex-direction: column;
-        gap: 12px;
+      .price-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.68);
+      }
+
+      .price-head {
+        display: none;
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 560px) {
+      .container {
+        padding: 16px 14px;
+      }
+
+      .nav {
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 12px;
+        margin: 0 -14px;
+      }
+
+      .brand-logo img {
+        height: 46px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 5px;
+        font-size: 12px;
+      }
+
+      .nav-links a {
+        padding: 7px 7px;
+      }
+
       h1 {
-        font-size: 34px;
+        font-size: 33px;
       }
 
       .hero-text {
         font-size: 16px;
-      }
-
-      .reasons,
-.commitments,
-.usage-grid {
-  grid-template-columns: 1fr;
-}
-
-      .mockup-grid {
-        grid-template-columns: 1fr;
       }
 
       .buttons {
@@ -516,7 +550,22 @@
 
       .button-primary,
       .button-secondary {
-        text-align: center;
+        width: 100%;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+
+      .commitments,
+      .reasons,
+      .usage-grid,
+      .quick-points {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box h2 {
+        font-size: 28px;
       }
     }
   </style>
@@ -525,156 +574,169 @@
 <body>
   <div class="container">
     <nav class="nav">
-      <div class="brand-logo">
-  <img src="logo.png" alt="AnimeX - World Of Anime">
-</div>
+      <a class="brand-logo" href="#top" aria-label="AnimeX">
+        <img src="logo.png" alt="AnimeX - World Of Anime">
+      </a>
+
       <div class="nav-links">
-  <a href="#san-pham">Sản phẩm</a>
-  <a href="#bang-gia">Bảng giá</a>
-  <a href="#cach-su-dung">Cách dán</a>
-  <a href="#huong-dan">Đặt hàng</a>
-  <a href="#lien-he">Liên hệ</a>
-</div>
+        <a href="#san-pham">Sản phẩm</a>
+        <a href="#bang-gia">Bảng giá</a>
+        <a href="#cach-su-dung">Cách dán</a>
+        <a href="#lien-he">Liên hệ</a>
+      </div>
     </nav>
 
-    <main class="hero">
+    <main class="hero" id="top">
       <div>
         <div class="badge">✨ Decor anime cho fan manga/anime</div>
 
         <h1>
-          Biến góc nhỏ của bạn thành <span class="highlight">thế giới anime</span>
+          Decor góc phòng bằng <span class="highlight">thế giới anime</span> của riêng bạn
         </h1>
 
         <p class="hero-text">
-          AnimeX chuyên tranh dán, sticker manga, decal decor và phụ kiện anime dành cho góc học tập, phòng ngủ, bàn làm việc, tủ và vở.
+          AnimeX mang đến các dòng tranh dán anime A4/A5, sticker manga A6 150 tờ, set truy nã One Piece 10 tờ và decal decor dễ dán cho góc học tập, phòng ngủ, bàn làm việc, tủ hoặc vở.
         </p>
 
         <div class="buttons">
-          <a class="button-primary" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Nhắn Zalo để đặt hàng</a>
+          <a class="button-primary" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Nhắn Zalo để chọn mẫu</a>
           <a class="button-secondary" href="#san-pham">Xem sản phẩm</a>
+        </div>
+
+        <div class="quick-points">
+          <div class="quick-point">🧷 Có sẵn keo</div>
+          <div class="quick-point">🎨 Nhiều mẫu anime</div>
+          <div class="quick-point">💬 Hỗ trợ chọn mẫu</div>
         </div>
       </div>
 
       <div class="hero-banner">
-  <img src="preview.png" alt="AnimeX - Decor anime, tranh dán và sticker manga">
-</div>
+        <img src="preview.png" alt="AnimeX - Decor anime, tranh dán và sticker manga">
+      </div>
     </main>
 
     <section id="san-pham">
-  <h2 class="section-title">Sản phẩm nổi bật</h2>
-  <p class="section-subtitle">Các dòng sản phẩm decor anime đang có tại AnimeX</p>
+      <h2 class="section-title">Sản phẩm nổi bật</h2>
+      <p class="section-subtitle">Các dòng sản phẩm decor anime đang có tại AnimeX</p>
 
-  <div class="products">
-    <div class="product-card">
-      <div class="product-icon">🎴</div>
-      <h3>Combo tranh dán anime A4/A5</h3>
-      <p>
-        Tranh dán anime có sẵn keo mặt sau, chỉ cần bóc ra và dán. Phù hợp để decor phòng ngủ, góc học tập, bàn làm việc, tủ hoặc vở.
-      </p>
-      <p>
-        Có nhiều mẫu nhân vật anime, khách có thể nhắn shop để chọn mẫu yêu thích.
-      </p>
-      <span class="price">A4/A5 nhiều mẫu</span>
-      <a class="product-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Hỏi mẫu qua Zalo</a>
-    </div>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-icon">🎴</div>
+          <h3>Combo tranh dán anime A4/A5</h3>
+          <p>
+            Tranh dán anime có sẵn keo mặt sau, chỉ cần bóc ra và dán. Phù hợp để decor phòng ngủ, góc học tập, bàn làm việc, tủ hoặc vở.
+          </p>
+          <p>
+            Có nhiều mẫu nhân vật anime. Bạn có thể nhắn AnimeX để hỏi mẫu, chọn nhân vật hoặc chọn theo bộ truyện yêu thích.
+          </p>
+          <span class="price">Combo A4/A5 nhiều mẫu</span>
+          <a class="product-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Hỏi mẫu qua Zalo</a>
+        </div>
 
-    <div class="product-card">
-      <div class="product-icon">📖</div>
-      <h3>Sticker Manga A6 150 tờ</h3>
-      <p>
-        Xấp gấp liên tục 150 tờ, kích thước 10x15cm. Mỗi tờ là một trang manga full-page, in đen trắng trên decal có sẵn keo.
-      </p>
-      <p>
-        Dùng để decor phòng, dán vở, tủ, bàn học, góc làm việc hoặc sưu tầm theo bộ truyện yêu thích.
-      </p>
-      <span class="price">59.000đ/set</span>
-      <a class="product-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Đặt set A6</a>
-    </div>
+        <div class="product-card">
+          <div class="product-icon">📖</div>
+          <h3>Sticker Manga A6 150 tờ</h3>
+          <p>
+            Xấp gấp liên tục 150 tờ, kích thước 10x15cm. Mỗi tờ là một trang manga full-page, in đen trắng trên decal có sẵn keo.
+          </p>
+          <p>
+            Dùng để decor phòng, dán vở, tủ, bàn học, góc làm việc hoặc sưu tầm theo bộ truyện yêu thích.
+          </p>
+          <span class="price">59.000đ/set</span>
+          <a class="product-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Đặt set A6</a>
+        </div>
 
-    <div class="product-card">
-      <div class="product-icon">🏴‍☠️</div>
-      <h3>Set truy nã One Piece 10 tờ A4/A5</h3>
-<p>
-  Bộ tranh truy nã phong cách One Piece gồm 10 tờ, có thể chọn khổ A4 hoặc A5. Phù hợp để decor phòng, góc học tập, bàn làm việc, tủ hoặc vở.
-</p>
-<p>
-  Set gồm các poster truy nã nhân vật Mũ Rơm, thiết kế nổi bật, hợp với fan One Piece và người thích decor anime.
-</p>
-<span class="price">Set 10 tờ A4/A5</span>
-<a class="product-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Hỏi set truy nã</a>
-    </div>
-  </div>
-</section>
+        <div class="product-card">
+          <div class="product-icon">🏴‍☠️</div>
+          <h3>Set truy nã One Piece 10 tờ A4/A5</h3>
+          <p>
+            Set poster truy nã One Piece gồm 10 tờ, có thể chọn khổ A4 hoặc A5. Phù hợp để decor phòng, góc học tập, bàn làm việc, tủ hoặc vở.
+          </p>
+          <p>
+            Thiết kế phong cách truy nã hải tặc, nổi bật khi dán theo set 10 nhân vật. Hợp với fan One Piece và người thích decor anime.
+          </p>
+          <span class="price">Set 10 tờ A4/A5</span>
+          <a class="product-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Hỏi set truy nã</a>
+        </div>
+      </div>
+    </section>
+
     <section id="bang-gia">
-  <h2 class="section-title">Bảng giá nhanh</h2>
-  <p class="section-subtitle">Giá có thể thay đổi theo combo, mẫu chọn và chương trình ưu đãi</p>
+      <h2 class="section-title">Bảng giá nhanh</h2>
+      <p class="section-subtitle">Giá có thể thay đổi theo mẫu, combo và chương trình ưu đãi hiện tại</p>
 
-  <div class="price-table">
-    <div class="price-row price-head">
-      <div>Sản phẩm</div>
-      <div>Quy cách</div>
-      <div>Giá/ghi chú</div>
-      <div>Đặt hàng</div>
-    </div>
+      <div class="price-table">
+        <div class="price-row price-head">
+          <div>Sản phẩm</div>
+          <div>Quy cách</div>
+          <div>Giá/ghi chú</div>
+          <div>Đặt hàng</div>
+        </div>
 
-    <div class="price-row">
-      <div><strong>Combo tranh dán anime A4/A5</strong></div>
-      <div>Set nhiều mẫu, có sẵn keo mặt sau</div>
-      <div>Nhắn shop để chọn mẫu</div>
-      <div>
-        <a href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Hỏi mẫu</a>
+        <div class="price-row">
+          <div><strong>Combo tranh dán anime A4/A5</strong></div>
+          <div>Combo nhiều mẫu, có sẵn keo mặt sau</div>
+          <div>Nhắn shop để xem mẫu và giá hiện tại</div>
+          <div>
+            <a class="table-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Hỏi mẫu</a>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div><strong>Sticker Manga A6</strong></div>
+          <div>150 tờ/xấp, 10x15cm, in đen trắng</div>
+          <div><strong>59.000đ/set</strong></div>
+          <div>
+            <a class="table-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Đặt set</a>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div><strong>Set truy nã One Piece</strong></div>
+          <div>10 tờ, chọn khổ A4 hoặc A5</div>
+          <div>Nhắn shop để xem mẫu và giá hiện tại</div>
+          <div>
+            <a class="table-button" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Hỏi set</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="price-row">
-      <div><strong>Sticker Manga A6</strong></div>
-      <div>150 tờ/xấp, 10x15cm, in đen trắng</div>
-      <div><strong>59.000đ/set</strong></div>
-      <div>
-        <a href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Đặt set</a>
+      <div class="note-box">
+        💡 Nếu muốn chọn nhân vật hoặc bộ anime cụ thể, bạn có thể nhắn Zalo cho AnimeX trước khi đặt hàng. Nếu sản phẩm có nhiều mẫu, shop sẽ tư vấn mẫu phù hợp theo nhu cầu decor của bạn.
       </div>
-    </div>
+    </section>
 
-    <div class="price-row">
-      <div><strong>Set truy nã One Piece</strong></div>
-      <div>10 tờ, chọn khổ A4 hoặc A5</div>
-      <div>Nhắn shop để chọn set</div>
-      <div>
-        <a href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Hỏi set</a>
+    <section id="cam-ket">
+      <h2 class="section-title">Cam kết từ AnimeX</h2>
+      <p class="section-subtitle">Thông tin rõ ràng để bạn chọn đúng sản phẩm phù hợp</p>
+
+      <div class="commitments">
+        <div class="commit-card">
+          <div class="commit-icon">✅</div>
+          <h3>Sản phẩm đúng mô tả</h3>
+          <p>Thông tin về kích thước, số lượng, chất liệu và cách sử dụng được ghi rõ trước khi đặt hàng.</p>
+        </div>
+
+        <div class="commit-card">
+          <div class="commit-icon">🧷</div>
+          <h3>Có sẵn keo mặt sau</h3>
+          <p>Các dòng decal/sticker có lớp keo sẵn, dễ bóc và dán lên bề mặt phẳng, sạch, khô ráo.</p>
+        </div>
+
+        <div class="commit-card">
+          <div class="commit-icon">💬</div>
+          <h3>Hỗ trợ chọn mẫu</h3>
+          <p>Bạn có thể nhắn Zalo để hỏi mẫu, chọn nhân vật hoặc được tư vấn sản phẩm phù hợp.</p>
+        </div>
+
+        <div class="commit-card warning">
+          <div class="commit-icon">💧</div>
+          <h3>Lưu ý khi sử dụng</h3>
+          <p>Một số sản phẩm decal/in nhiệt nên dùng ở nơi khô ráo, hạn chế tiếp xúc trực tiếp với nước để giữ hình đẹp hơn.</p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<section id="cam-ket">
-  <h2 class="section-title">Cam kết từ AnimeX</h2>
-  <p class="section-subtitle">Thông tin rõ ràng để bạn chọn đúng sản phẩm phù hợp</p>
+    </section>
 
-  <div class="commitments">
-    <div class="commit-card">
-      <div class="commit-icon">✅</div>
-      <h3>Sản phẩm đúng mô tả</h3>
-      <p>Thông tin về kích thước, số lượng, chất liệu và cách sử dụng được ghi rõ trước khi đặt hàng.</p>
-    </div>
-
-    <div class="commit-card">
-      <div class="commit-icon">🧷</div>
-      <h3>Có sẵn keo mặt sau</h3>
-      <p>Các dòng decal/sticker có lớp keo sẵn, dễ bóc và dán lên bề mặt phẳng, sạch, khô ráo.</p>
-    </div>
-
-    <div class="commit-card">
-      <div class="commit-icon">💬</div>
-      <h3>Hỗ trợ chọn mẫu</h3>
-      <p>Bạn có thể nhắn Zalo để hỏi mẫu, chọn nhân vật hoặc được tư vấn sản phẩm phù hợp.</p>
-    </div>
-
-    <div class="commit-card warning">
-      <div class="commit-icon">💧</div>
-      <h3>Lưu ý không chống nước</h3>
-      <p>Một số sản phẩm decal/in nhiệt không chống nước. Nên dán nơi khô ráo, tránh tiếp xúc trực tiếp với nước.</p>
-    </div>
-  </div>
-</section>
     <section>
       <h2 class="section-title">Vì sao nên chọn AnimeX?</h2>
       <p class="section-subtitle">Sản phẩm dễ dùng, dễ decor, phù hợp fan anime</p>
@@ -682,70 +744,70 @@
       <div class="reasons">
         <div class="reason">
           <div>🧷</div>
-          <strong>Có sẵn keo</strong>
+          <strong>Có sẵn keo, dễ bóc dán</strong>
         </div>
 
         <div class="reason">
           <div>⚡</div>
-          <strong>Dễ sử dụng</strong>
+          <strong>Đặt hàng nhanh qua Zalo</strong>
         </div>
 
         <div class="reason">
           <div>🎨</div>
-          <strong>Nhiều mẫu anime</strong>
+          <strong>Nhiều mẫu anime để chọn</strong>
         </div>
 
         <div class="reason">
           <div>💖</div>
-          <strong>Giá dễ tiếp cận</strong>
+          <strong>Phù hợp decor góc riêng</strong>
         </div>
       </div>
     </section>
 
     <section id="cach-su-dung">
-  <h2 class="section-title">Cách sử dụng sản phẩm</h2>
-  <p class="section-subtitle">Dán đẹp hơn khi bề mặt sạch, phẳng và khô ráo</p>
+      <h2 class="section-title">Cách sử dụng sản phẩm</h2>
+      <p class="section-subtitle">Dán đẹp hơn khi bề mặt sạch, phẳng và khô ráo</p>
 
-  <div class="usage-grid">
-    <div class="usage-card">
-      <div class="usage-icon">🧼</div>
-      <h3>1. Lau sạch bề mặt</h3>
-      <p>Lau bụi trên tường, vở, tủ, bàn hoặc bề mặt cần dán. Nên chọn nơi phẳng, sạch và khô ráo.</p>
-    </div>
+      <div class="usage-grid">
+        <div class="usage-card">
+          <div class="usage-icon">🧼</div>
+          <h3>1. Lau sạch bề mặt</h3>
+          <p>Lau bụi trên tường, vở, tủ, bàn hoặc bề mặt cần dán. Nên chọn nơi phẳng, sạch và khô ráo.</p>
+        </div>
 
-    <div class="usage-card">
-      <div class="usage-icon">📐</div>
-      <h3>2. Căn vị trí trước</h3>
-      <p>Đặt thử sản phẩm lên vị trí muốn dán để canh bố cục. Khi thấy vừa mắt rồi mới bắt đầu bóc keo.</p>
-    </div>
+        <div class="usage-card">
+          <div class="usage-icon">📐</div>
+          <h3>2. Căn vị trí trước</h3>
+          <p>Đặt thử sản phẩm lên vị trí muốn dán để canh bố cục. Khi thấy vừa mắt rồi mới bắt đầu bóc keo.</p>
+        </div>
 
-    <div class="usage-card">
-      <div class="usage-icon">🧷</div>
-      <h3>3. Bóc lớp keo mặt sau</h3>
-      <p>Bóc nhẹ lớp giấy phía sau, dán từ từ từ một cạnh sang cạnh còn lại để hạn chế nhăn hoặc lệch.</p>
-    </div>
+        <div class="usage-card">
+          <div class="usage-icon">🧷</div>
+          <h3>3. Bóc lớp keo mặt sau</h3>
+          <p>Bóc nhẹ lớp giấy phía sau, dán từ từ từ một cạnh sang cạnh còn lại để hạn chế nhăn hoặc lệch.</p>
+        </div>
 
-    <div class="usage-card">
-      <div class="usage-icon">✨</div>
-      <h3>4. Miết nhẹ cho phẳng</h3>
-      <p>Sau khi dán, dùng tay miết nhẹ từ giữa ra ngoài để sản phẩm bám đều và nhìn gọn gàng hơn.</p>
-    </div>
-  </div>
-</section>
-    
+        <div class="usage-card">
+          <div class="usage-icon">✨</div>
+          <h3>4. Miết nhẹ cho phẳng</h3>
+          <p>Sau khi dán, dùng tay miết nhẹ từ giữa ra ngoài để sản phẩm bám đều và nhìn gọn gàng hơn.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="huong-dan">
       <h2 class="section-title">Hướng dẫn đặt hàng</h2>
-      <p class="section-subtitle">Đặt hàng nhanh qua Zalo, TikTok Shop hoặc Shopee</p>
+      <p class="section-subtitle">Đặt hàng nhanh qua Zalo, TikTok hoặc Shopee</p>
 
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
-          <div>Chọn dòng sản phẩm bạn thích: tranh dán, sticker manga, thẻ bài hoặc decal anime.</div>
+          <div>Chọn dòng sản phẩm bạn thích: tranh dán anime, sticker manga A6, set truy nã One Piece hoặc decal anime.</div>
         </div>
 
         <div class="step">
           <div class="step-number">2</div>
-          <div>Nhắn shop qua Zalo hoặc bấm sang TikTok Shop/Shopee để xem sản phẩm.</div>
+          <div>Nhắn shop qua Zalo hoặc bấm sang TikTok/Shopee để xem sản phẩm đang có.</div>
         </div>
 
         <div class="step">
@@ -767,7 +829,7 @@
 
         <div class="buttons" style="justify-content: center;">
           <a class="button-primary" href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Nhắn Zalo ngay</a>
-          <a class="button-secondary" href="https://www.tiktok.com/@animex.official" target="_blank" rel="noopener noreferrer">TikTok Shop</a>
+          <a class="button-secondary" href="https://www.tiktok.com/@animex.official" target="_blank" rel="noopener noreferrer">TikTok</a>
           <a class="button-secondary" href="https://shopee.vn/animex.store" target="_blank" rel="noopener noreferrer">Shopee</a>
           <a class="button-secondary" href="https://www.facebook.com/AnimeX.WorldOfAnime/" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
@@ -775,8 +837,17 @@
     </section>
 
     <footer>
-      © 2026 AnimeX. Decor anime cho góc phòng, góc học tập và thế giới riêng của bạn.
+      <strong>© 2026 AnimeX - World Of Anime.</strong><br>
+      Decor anime cho góc phòng, góc học tập và thế giới riêng của bạn.
+
+      <div class="footer-links">
+        <a href="https://www.tiktok.com/@animex.official" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://shopee.vn/animex.store" target="_blank" rel="noopener noreferrer">Shopee</a>
+        <a href="https://www.facebook.com/AnimeX.WorldOfAnime/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://zalo.me/367615919" target="_blank" rel="noopener noreferrer">Zalo</a>
+      </div>
     </footer>
   </div>
 </body>
 </html>
+```
