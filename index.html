@@ -245,6 +245,41 @@
   font-weight: 900;
   box-shadow: 0 8px 22px rgba(255, 79, 163, 0.18);
 }
+    .commitments {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.commit-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 14px 34px rgba(60, 60, 100, 0.1);
+}
+
+.commit-icon {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.commit-card h3 {
+  font-size: 18px;
+  color: #202033;
+  margin-bottom: 10px;
+}
+
+.commit-card p {
+  color: #5c5c70;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.commit-card.warning {
+  background: #fff8e8;
+  border-color: #ffcf4a;
+}
     .reasons {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -338,9 +373,10 @@
         grid-template-columns: 1fr;
       }
 
-      .reasons {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .reasons,
+.commitments {
+  grid-template-columns: repeat(2, 1fr);
+}
 
       .nav {
         flex-direction: column;
@@ -357,9 +393,10 @@
         font-size: 16px;
       }
 
-      .reasons {
-        grid-template-columns: 1fr;
-      }
+      .reasons,
+.commitments {
+  grid-template-columns: 1fr;
+}
 
       .mockup-grid {
         grid-template-columns: 1fr;
@@ -476,7 +513,36 @@
     </div>
   </div>
 </section>
+<section id="cam-ket">
+  <h2 class="section-title">Cam kết từ AnimeX</h2>
+  <p class="section-subtitle">Thông tin rõ ràng để bạn chọn đúng sản phẩm phù hợp</p>
 
+  <div class="commitments">
+    <div class="commit-card">
+      <div class="commit-icon">✅</div>
+      <h3>Sản phẩm đúng mô tả</h3>
+      <p>Thông tin về kích thước, số lượng, chất liệu và cách sử dụng được ghi rõ trước khi đặt hàng.</p>
+    </div>
+
+    <div class="commit-card">
+      <div class="commit-icon">🧷</div>
+      <h3>Có sẵn keo mặt sau</h3>
+      <p>Các dòng decal/sticker có lớp keo sẵn, dễ bóc và dán lên bề mặt phẳng, sạch, khô ráo.</p>
+    </div>
+
+    <div class="commit-card">
+      <div class="commit-icon">💬</div>
+      <h3>Hỗ trợ chọn mẫu</h3>
+      <p>Bạn có thể nhắn Zalo để hỏi mẫu, chọn nhân vật hoặc được tư vấn sản phẩm phù hợp.</p>
+    </div>
+
+    <div class="commit-card warning">
+      <div class="commit-icon">💧</div>
+      <h3>Lưu ý không chống nước</h3>
+      <p>Một số sản phẩm decal/in nhiệt không chống nước. Nên dán nơi khô ráo, tránh tiếp xúc trực tiếp với nước.</p>
+    </div>
+  </div>
+</section>
     <section>
       <h2 class="section-title">Vì sao nên chọn AnimeX?</h2>
       <p class="section-subtitle">Sản phẩm dễ dùng, dễ decor, phù hợp fan anime</p>
